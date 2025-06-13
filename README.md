@@ -32,6 +32,11 @@ KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack A
 
 ---
 
+## 🌿 System Overview
+
+![Screenshot 2025-06-13 234045](https://github.com/user-attachments/assets/f52503d3-6659-45ab-9758-644350fc3e5f)
+
+
 ## 🗂️ Project Structure
 
 ```bash
