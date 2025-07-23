@@ -3,7 +3,7 @@
 
 KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack AI-powered web application that generates creative, high-quality images from user prompts using **Gemini 2.0 Flash**. Built with the **MERN stack** and deployed on Render, it allows users to create, view, and share their artistic creations with the community.
 
-🌐 **Live App**: [कल्पचित्रण](https://imagegenerator-ai-1.onrender.com)  
+🌐 **Live App**: [कल्पचित्रण](https://imagegenerator-ai-1.onrender.com)
 <br/>
 
 ![Screenshot 1](https://github.com/user-attachments/assets/985cb6fd-ee07-4be3-8452-9e373f0ac1c6)
@@ -167,7 +167,7 @@ Let’s improve **KalpChitran** together.
 
 ## 📄 License
 
-This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).  
+This project is licensed under the [MIT License](https://github.com/TiwariAry/ImageGenerator_AI/blob/main/LICENSE).
 Feel free to fork, modify, and build on it.
 
 ---
