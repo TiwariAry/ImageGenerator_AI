@@ -1,7 +1,7 @@
 # कल्पचित्रण (KalpChitran) 🖌️
-**AI Image Generator Web App powered by Gemini 2.0**
+**AI Image Generator Web App powered by FLUX.1-schnell**
 
-KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack AI-powered web application that generates creative, high-quality images from user prompts using **Gemini 2.0 Flash**. Built with the **MERN stack** and deployed on Render, it allows users to create, view, and share their artistic creations with the community.
+KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack AI-powered web application that generates creative, high-quality images from user prompts using **FLUX.1-schnell**. Built with the **MERN stack** and deployed on Render, it allows users to create, view, and share their artistic creations with the community.
 
 🌐 **Live App**: [कल्पचित्रण](https://imagegenerator-ai-1.onrender.com)
 <br/>
@@ -13,12 +13,12 @@ KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack A
 
 ## 📸 Features
 
-- ✨ Generate creative images using prompts via **Gemini 2.0**
+- ✨ Generate creative images using prompts via **FLUX.1-schnell**
 - 📤 Publish generated images to the community dashboard
 - 🖼️ View user-generated artwork in a clean, responsive gallery
 - 🧠 Hover to reveal the creator’s name and the prompt used
 - 🔐 Secure image uploads using **Cloudinary**
-- 🚀 Deployed with **Render (Backend)** and **React Router (Frontend)**
+- 🚀 Deployed with **Render**
 
 ---
 
@@ -26,8 +26,8 @@ KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack A
 
 | Frontend       | Backend       | AI Model        | Deployment       | Storage          |
 |----------------|---------------|-----------------|------------------|------------------|
-| React.js       | Node.js       | Gemini 2.0 Flash| Render           | Cloudinary       |
-| Tailwind CSS   | Express.js    | Google GenAI API|                  | MongoDB Atlas    |
+| React.js       | Node.js       | FLUX.1-schnell  | Render           | Cloudinary       |
+| Tailwind CSS   | Express.js    |                 |                  | MongoDB Atlas    |
 | React Router   | Mongoose      |                 |                  |                  |
 
 ---
@@ -58,8 +58,8 @@ KalpChitran/
 
 ### 🔧 Prompt → Image (via Gemini API)
 1. User enters a creative prompt.
-2. Request is sent to `/api/v1/dalle/` on backend.
-3. Gemini 2.0 Flash generates an image (base64 format).
+2. Request is sent to `/api/v1/hugging-face` on backend.
+3. FLUX.1-schnell generates an image (base64 format).
 4. Image is sent back and shown on UI.
 
 ### 📤 Publish Post (Cloudinary + MongoDB)
@@ -76,7 +76,7 @@ KalpChitran/
 - Node.js v18+
 - MongoDB Atlas account
 - Cloudinary account
-- Gemini API key ([Generate via Google GenAI](https://makersuite.google.com/app))
+- Hugging Face API key ([Generate API here](https://huggingface.co/settings/tokens))
 
 ---
 
@@ -99,7 +99,7 @@ npm install
 
 Create a `.env` file in `server/` with:
 ```
-GEMINI_API_KEY=your_gemini_api_key
+HUGGINGFACE_API_KEY=your_huggingface_api_key
 MONGODB_URL=your_mongodb_connection_string
 CLOUDINARY_CLOUD_NAME=your_cloudinary_name
 CLOUDINARY_API_KEY=your_api_key
@@ -127,7 +127,7 @@ Update **API URLs** in:
 > `src/pages/CreatePost.jsx`  
 Replace lines 31 and 59 with:
 ```js
-'https://localhost:5000/api/v1/dalle'
+'https://localhost:5000/api/v1/hugging-face'
 'https://localhost:5000/api/v1/post'
 ```
 
@@ -142,7 +142,7 @@ Visit: `http://localhost:5173`
 
 ## 🧠 Learnings & Highlights
 
-- Integrated Gemini 2.0 API for AI image generation
+- Integrated FLUX.1-schnell for AI image generation
 - Designed and deployed a full-stack app using the MERN stack
 - Learned image streaming, async request handling, and cloud image hosting
 - Managed backend APIs, error boundaries, and real-time frontend rendering
