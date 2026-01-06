@@ -27,8 +27,9 @@ const CreatePost = () => {
     const generateImage = async () => {
         if (form.prompt) {
             try {
+                // https://imagegenerator-ai.onrender.com/api/v1/hugging-face
                 setGeneratingImg(true);
-                const response = await fetch('https://imagegenerator-ai.onrender.com/api/v1/dalle', {
+                const response = await fetch('http://localhost:5000/api/v1/hugging-face', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

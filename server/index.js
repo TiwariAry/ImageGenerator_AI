@@ -5,7 +5,7 @@ import cors from 'cors'
 import {connectDB} from "./mongodb/connect.js";
 
 import postRoutes from "./routes/postRoutes.js"
-import dalleRoutes from "./routes/dalleRoutes.js"
+import huggingFaceRoutes from "./routes/huggingFaceRoutes.js"
 
 // Env config
 dotenv.config();
@@ -19,7 +19,7 @@ app.use(express.json({ limit: '50mb'}))
 
 // Routes
 app.use("/api/v1/post", postRoutes)
-app.use("/api/v1/dalle", dalleRoutes)
+app.use("/api/v1/hugging-face", huggingFaceRoutes)
 
 // Routes
 app.get('/', async (req, res) => {
@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
 // Listen to port
 const startServer = async () => {
     try {
-        await connectDB(process.env.MONGO_URL)
+        await connectDB(process.env.MONGODB_URL)
         app.listen(5000, () => {
             console.log("Server is listening to port 5000");
         })
