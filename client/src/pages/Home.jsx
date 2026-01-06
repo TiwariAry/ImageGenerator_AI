@@ -25,11 +25,13 @@ const Home = () => {
             setLoading(true)
 
             try {
+                // http://localhost:5000/api/v1/post
                 const response = await fetch('https://imagegenerator-ai.onrender.com/api/v1/post', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
-                    }
+                    },
+                    timeout: 60000
                 })
 
                 if (response.ok) {
