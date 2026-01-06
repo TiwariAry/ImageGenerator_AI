@@ -6,8 +6,8 @@ KalpChitran (Hindi: *कल्पना + चित्रण*) is a full-stack A
 🌐 **Live App**: [कल्पचित्रण](https://imagegenerator-ai-1.onrender.com)
 <br/>
 
-![Screenshot 1](https://github.com/user-attachments/assets/985cb6fd-ee07-4be3-8452-9e373f0ac1c6)
-![Screenshot 2](https://github.com/user-attachments/assets/11f22f8c-4817-49d9-bd9f-d70b634f16e1)
+<img width="1892" height="950" alt="image" src="https://github.com/user-attachments/assets/518c133a-c3e9-469d-aa5e-cc64c8ac9f0c" />
+<img width="1887" height="933" alt="image" src="https://github.com/user-attachments/assets/eb50d8f0-654d-4f41-9bb3-4ed9c7cf2d5e" />
 
 ---
 
